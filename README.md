@@ -1,5 +1,5 @@
 # apex external
-apex external cheat
+update offsets and add your driver
 
 basic apex external to take from
 
