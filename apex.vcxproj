@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{334ec28d-3d52-41b0-8b25-a0248decd983}</ProjectGuid>
+    <RootNamespace>apex</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\marmasm.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\viper\Desktop\apex k\apex\entry\imgui;C:\Users\viper\Desktop\apex k\apex\entry\engine\cheat;../;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+    <TargetName>relapse apex</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <MASM>
+      <WarningLevel>0</WarningLevel>
+      <AdditionalOptions />
+    </MASM>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="entry\engine\cheat\config.cpp" />
+    <ClCompile Include="entry\imgui\imgui.cpp" />
+    <ClCompile Include="entry\imgui\imgui_demo.cpp" />
+    <ClCompile Include="entry\imgui\imgui_draw.cpp" />
+    <ClCompile Include="entry\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="entry\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="entry\imgui\imgui_tables.cpp" />
+    <ClCompile Include="entry\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="entry\main.cpp" />
+    <ClCompile Include="entry\protection\oxorany.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="apex\game\encryption.h" />
+    <ClInclude Include="apex\game\import.h" />
+    <ClInclude Include="apex\game\loop.hpp" />
+    <ClInclude Include="apex\game\offsets.hpp" />
+    <ClInclude Include="apex\game\sdk.hpp" />
+    <ClInclude Include="apex\imgui\imconfig.h" />
+    <ClInclude Include="apex\imgui\imgui.h" />
+    <ClInclude Include="apex\imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="apex\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="apex\imgui\imgui_internal.h" />
+    <ClInclude Include="apex\imgui\imstb_rectpack.h" />
+    <ClInclude Include="apex\imgui\imstb_textedit.h" />
+    <ClInclude Include="apex\imgui\imstb_truetype.h" />
+    <ClInclude Include="apex\km\driver.h" />
+    <ClInclude Include="apex\km\ia32.h" />
+    <ClInclude Include="apex\km\input.h" />
+    <ClInclude Include="apex\km\logging.h" />
+    <ClInclude Include="apex\km\ntstatus.h" />
+    <ClInclude Include="apex\km\wdk.h" />
+    <ClInclude Include="apex\main.h" />
+    <ClInclude Include="apex\overlay\includes.h" />
+    <ClInclude Include="apex\overlay\overlay.hpp" />
+    <ClInclude Include="entry\engine\cheat\config.h" />
+    <ClInclude Include="entry\engine\game\keys.h" />
+    <ClInclude Include="entry\engine\game\render.h" />
+    <ClInclude Include="entry\engine\cheat\vars.h" />
+    <ClInclude Include="entry\image\Armor\Uncommon_Armor_Bytes.h" />
+    <ClInclude Include="entry\imgui\imconfig.h" />
+    <ClInclude Include="entry\imgui\imgui.h" />
+    <ClInclude Include="entry\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="entry\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="entry\imgui\imgui_internal.h" />
+    <ClInclude Include="entry\imgui\imstb_rectpack.h" />
+    <ClInclude Include="entry\imgui\imstb_textedit.h" />
+    <ClInclude Include="entry\imgui\imstb_truetype.h" />
+    <ClInclude Include="entry\protection\import.h" />
+    <ClInclude Include="entry\engine\cheat\loop.hpp" />
+    <ClInclude Include="entry\engine\game\offsets.hpp" />
+    <ClInclude Include="entry\engine\game\sdk.hpp" />
+    <ClInclude Include="entry\image\Ammo\EnergyAmmobytes.h" />
+    <ClInclude Include="entry\image\Ammo\HeavyAmmobytes.h" />
+    <ClInclude Include="entry\image\Ammo\LightAmmobytes.h" />
+    <ClInclude Include="entry\image\Ammo\ShotgunAmmobytes.h" />
+    <ClInclude Include="entry\image\Ammo\SniperAmmobytes.h" />
+    <ClInclude Include="entry\image\Armor\Common_Armor_Bytes.h" />
+    <ClInclude Include="entry\image\Armor\Helmetbytes.h" />
+    <ClInclude Include="entry\image\Armor\Legendary_Armor_Bytes.h" />
+    <ClInclude Include="entry\image\Armor\Mythic_Armor_Bytes.h" />
+    <ClInclude Include="entry\image\Armor\Rare_Armor_Bytes.h" />
+    <ClInclude Include="entry\image\Cartoon\EKitten.h" />
+    <ClInclude Include="entry\image\Cartoon\Peter_Griffen.h" />
+    <ClInclude Include="entry\image\Meds\evo-cache_bytes.h" />
+    <ClInclude Include="entry\image\Meds\Med-Kit_bytes.h" />
+    <ClInclude Include="entry\image\Meds\Med-Small_bytes.h" />
+    <ClInclude Include="entry\image\Meds\phynix_bytes.h" />
+    <ClInclude Include="entry\image\Meds\Shield-Large_bytes.h" />
+    <ClInclude Include="entry\image\Meds\Shield-Small_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Energy\EMG_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Energy\Havoc_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Energy\Nemisis_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Energy\Triple_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Energy\Volt_Bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Pistol\alternator_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Pistol\p2020_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Pistol\re45_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Pistol\wingmen_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Rifle\car_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Rifle\Carbine_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Rifle\Flatline_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Rifle\Hemlok_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Rifle\Prowler_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Rifle\Rampage_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Rifle\Repeater_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Rifle\scout_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Rifle\Spit-Fire_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Shotgun\eva_8_auto_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Shotgun\mastiff_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Shotgun\mozambique_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Shotgun\peacekeeper_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\sniper\ChargedRifle_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\sniper\DMR_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\sniper\Sentinel_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Special\Bow_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Special\Devotion_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Special\Knife_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Special\Kraber_bytes.h" />
+    <ClInclude Include="entry\image\Weapons\Special\R99_bytes.h" />
+    <ClInclude Include="entry\kernel\nt\input.h" />
+    <ClInclude Include="entry\main.h" />
+    <ClInclude Include="entry\overlay\includes.h" />
+    <ClInclude Include="entry\overlay\overlay.hpp" />
+    <ClInclude Include="entry\protection\oxorany.h" />
+    <ClInclude Include="entry\protection\oxorany_include.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\marmasm.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+    <Import Project="packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets" Condition="Exists('packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\nlohmann.json.3.12.0\build\native\nlohmann.json.targets'))" />
+  </Target>
+</Project>
